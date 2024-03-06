@@ -7,6 +7,7 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import ButtonUsage from '../components/ButtonUsage';
 // import { MainGrid } from '../components/MainGrid';
 
 export default function Index({ posts, globalData }) {
@@ -14,16 +15,8 @@ export default function Index({ posts, globalData }) {
     <Layout>
       <Header />
       <SEO title={globalData.name} description={globalData.blogTitle} />
-
+      <ButtonUsage />
       <Footer copyrightText={globalData.footerText} />
-      <GradientBackground
-        variant="large"
-        className="fixed top-20 opacity-40 dark:opacity-60"
-      />
-      <GradientBackground
-        variant="small"
-        className="absolute bottom-0 opacity-20 dark:opacity-10"
-      />
     </Layout>
   );
 }
