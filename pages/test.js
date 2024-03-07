@@ -16,6 +16,8 @@ export default function Index({ posts, globalData }) {
       <Header />
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <ButtonUsage />
+
+      <Link href="../">Main page</Link>
       <Footer copyrightText={globalData.footerText} />
     </Layout>
   );

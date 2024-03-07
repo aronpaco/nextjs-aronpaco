@@ -9,6 +9,7 @@ import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 import Main from '../components/Main';
 import CustomLink from '../components/CustomLink';
+import { Button } from '@mui/joy';
 // import { MainGrid } from '../components/MainGrid';
 
 export default function Index({ posts, globalData }) {
@@ -17,7 +18,16 @@ export default function Index({ posts, globalData }) {
       <Header />
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Main />
-      <Link href="/test">Test</Link>
+      <Button color="success" variant="soft">
+        <Link href="/test">Test</Link>
+      </Button>
+      <hr />
+      <Button color="success" variant="soft">
+        <Link href="/test">Test</Link>
+      </Button>
+      <Button color="success" variant="soft">
+        <Link href="/test">Test</Link>
+      </Button>
 
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
