@@ -7,6 +7,8 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import Main from '../components/Main';
+import CustomLink from '../components/CustomLink';
 // import { MainGrid } from '../components/MainGrid';
 
 export default function Index({ posts, globalData }) {
@@ -14,6 +16,8 @@ export default function Index({ posts, globalData }) {
     <Layout>
       <Header />
       <SEO title={globalData.name} description={globalData.blogTitle} />
+      <Main />
+      <Link href="/test">Test</Link>
 
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
